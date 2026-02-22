@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="FlutterCraft by Muhammad Nisar – Flutter Mobile App Developer with 2+ years of experience building scalable, real-time mobile applications using Flutter, Firebase, and REST APIs." />
+  <meta name="keywords"
+    content="Flutter Developer, Flutter, Firebase, Mobile App Developer, Islamabad, GetX, Agora SDK, Real-time Apps" />
+  <title>FlutterCraft by Muhammad Nisar – Flutter Mobile App Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-flutter">Muhammad</span> <span class="brand-craft">Nisar</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+    </div>
+
+    <!-- Left Social Icons -->
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/muhammad-nisar-b84a46363/" target="_blank" rel="noopener"
+        aria-label="LinkedIn" class="social-icon-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+      </a>
+      <a href="https://github.com/imnisar" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/inisar_dev/" target="_blank" rel="noopener" aria-label="Instagram"
+        class="social-icon-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61559807730322" target="_blank" rel="noopener"
+        aria-label="Facebook" class="social-icon-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </svg>
+      </a>
+      <div class="social-line"></div>
+    </div>
+
+    <!-- Center Content -->
+    <div class="hero-center container">
+      <div class="hero-hello">Hello, I'm</div>
+      <h1 class="hero-name gradient-text">Muhammad Nisar</h1>
+      <p class="hero-role">Flutter Mobile App Developer<br>Specialized in Real-Time &amp; Clean Architecture</p>
+      <div class="hero-actions">
+        <a href="mailto:inisar.mail@gmail.com" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+          </svg>
+          Hire Me
+        </a>
+        <a href="#about" class="btn btn-secondary">About</a>
+      </div>
+
+      <!-- Arched Profile Photo -->
+      <div class="hero-arch-wrap">
+        <div class="hero-arch">
+          <img src="assets/profile.png" alt="Muhammad Nisar – Flutter Developer" class="hero-photo" />
+        </div>
+        <div class="hero-arch-glow"></div>
+      </div>
+    </div>
+
+    <!-- Right Scroll Indicator -->
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+
+
+  <!-- ── ABOUT ── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Flutter Developer.<br /><span class="gradient-text">Builder at Core.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <img src="assets/profile.png" alt="Muhammad Nisar" class="hero-photo"
+                style="width: 100%; height: 100%; object-fit: cover;">
+
+              <div class="avatar-badge-flutter">
+                <svg viewBox="0 0 30 30" fill="none">
+                  <circle cx="15" cy="15" r="15" fill="#0ea5e9" />
+                  <path d="M8 8l14 7-14 7V8z" fill="white" />
+                </svg>
+                Flutter Dev
+              </div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num" data-target="2">0</span><span class="stat-unit">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="20">0</span><span class="stat-unit">+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="5">0</span><span class="stat-unit">+</span>
+              <span class="stat-label">Production Apps</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-text">
+            I'm a Flutter Mobile App Developer with 2+ years of hands-on experience delivering production-grade mobile
+            applications. My expertise lies in building <strong>real-time systems</strong> — from live audio rooms and
+            virtual gifting ecosystems to complex wallet & coin monetization flows.
+          </p>
+          <p class="about-text">
+            Strong believer in <strong>clean architecture</strong>, performance optimization, and writing maintainable
+            code. I thrive at the intersection of technical depth and smooth user experience — turning complex
+            requirements into pixel-perfect, high-performance apps.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <div class="highlight-icon">🔥</div>
+              <div>
+                <strong>Real-Time Expert</strong>
+                <span>Live audio rooms, chat, virtual gifting & synchronization</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">🏗️</div>
+              <div>
+                <strong>Clean Architecture</strong>
+                <span>MVC / MVVM patterns with GetX state management</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">🚀</div>
+              <div>
+                <strong>Play Store Published</strong>
+                <span>Apps with real users, real reviews, real impact</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">🎨</div>
+              <div>
+                <strong>Figma → Flutter</strong>
+                <span>Pixel-perfect UI implementation from design files</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-links">
+            <a href="mailto:inisar.mail@gmail.com" class="about-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              inisar.mail@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-nisar-b84a46363/" target="_blank" rel="noopener"
+              class="about-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn Profile
+            </a>
+            <a href="tel:+923369420295" class="about-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              +92 336 9420295
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Stack</span>
+        <h2 class="section-title">What I Build With</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card skill-card--primary">
+          <div class="skill-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="url(#sk1)" />
+              <path d="M10 10l8 10-8 10h4l6-8 6 8h4l-8-10 8-10h-4l-6 8-6-8H10z" fill="white" />
+              <defs>
+                <linearGradient id="sk1" x1="0" y1="0" x2="40" y2="40">
+                  <stop stop-color="#0ea5e9" />
+                  <stop offset="1" stop-color="#6366f1" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3 class="skill-name">Flutter &amp; Dart</h3>
+          <p class="skill-desc">Core framework for cross-platform mobile development. Custom widgets, animations, and
+            performance tuning.</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-width="95"></div>
+          </div>
+          <span class="skill-percent">95%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="rgba(255,160,0,0.15)" />
+              <path d="M20 6l11 6v12l-11 6-11-6V12L20 6z" stroke="#FFA000" stroke-width="2" fill="none" />
+              <circle cx="20" cy="20" r="5" fill="#FFA000" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Firebase Suite</h3>
+          <p class="skill-desc">Auth, Firestore, FCM, Storage, and Realtime Database for robust backend-as-a-service
+            integration.</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-width="90"></div>
+          </div>
+          <span class="skill-percent">90%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="rgba(16,185,129,0.15)" />
+              <path d="M8 20h24M20 8v24M12 12l16 16M28 12L12 28" stroke="#10b981" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="skill-name">REST API Integration</h3>
+          <p class="skill-desc">Dio, http package, interceptors, error handling, and clean service-layer patterns.</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-width="88"></div>
+          </div>
+          <span class="skill-percent">88%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="rgba(99,102,241,0.15)" />
+              <path
+                d="M10 20c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10S10 25.52 10 20zm6 0a4 4 0 108 0 4 4 0 00-8 0z"
+                fill="#6366f1" />
+            </svg>
+          </div>
+          <h3 class="skill-name">GetX State Management</h3>
+          <p class="skill-desc">Reactive state, route management, and dependency injection for scalable apps.</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-width="92"></div>
+          </div>
+          <span class="skill-percent">92%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="rgba(14,165,233,0.15)" />
+              <rect x="10" y="10" width="8" height="8" rx="2" stroke="#0ea5e9" stroke-width="2" />
+              <rect x="22" y="10" width="8" height="8" rx="2" stroke="#0ea5e9" stroke-width="2" />
+              <rect x="10" y="22" width="8" height="8" rx="2" stroke="#0ea5e9" stroke-width="2" />
+              <rect x="22" y="22" width="8" height="8" rx="2" stroke="#0ea5e9" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Clean Architecture</h3>
+          <p class="skill-desc">MVC / MVVM separation of concerns, repository pattern, and scalable project structure.
+          </p>
+          <div class="skill-level">
+            <div class="skill-bar" data-width="90"></div>
+          </div>
+          <span class="skill-percent">90%</span>
+        </div>
+
+        <div class="skill-card skill-card--hot">
+          <div class="skill-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="rgba(239,68,68,0.15)" />
+              <circle cx="20" cy="20" r="12" stroke="#ef4444" stroke-width="2" />
+              <circle cx="20" cy="20" r="4" fill="#ef4444" />
+              <path d="M20 8v4M20 28v4M8 20h4M28 20h4" stroke="#ef4444" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Agora SDK</h3>
+          <p class="skill-desc">Real-time audio/video streaming, multi-seat live rooms, and host-audience interactions.
+          </p>
+          <div class="skill-level">
+            <div class="skill-bar" data-width="82"></div>
+          </div>
+          <span class="skill-percent">82%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="rgba(236,72,153,0.15)" />
+              <path d="M20 10v20M10 15l10-5 10 5v10l-10 5-10-5V15z" stroke="#ec4899" stroke-width="2" fill="none" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Socket.io</h3>
+          <p class="skill-desc">Bi-directional real-time events — gifts, room states, notifications, and live
+            synchronization.</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-width="80"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="rgba(245,158,11,0.15)" />
+              <rect x="10" y="16" width="20" height="12" rx="2" stroke="#f59e0b" stroke-width="2" />
+              <path d="M14 16v-3a6 6 0 0112 0v3" stroke="#f59e0b" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Sqflite / Local DB</h3>
+          <p class="skill-desc">SQLite on device for offline-first experiences, caching, and local persistence.</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-width="78"></div>
+          </div>
+          <span class="skill-percent">78%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="rgba(55,65,81,0.5)" />
+              <circle cx="20" cy="14" r="5" stroke="#94a3b8" stroke-width="2" />
+              <path d="M10 30c0-5.52 4.48-8 10-8s10 2.48 10 8" stroke="#94a3b8" stroke-width="2" />
+              <path d="M28 10l4 4-4 4M12 14l-4 4 4 4" stroke="#0ea5e9" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Git &amp; GitHub</h3>
+          <p class="skill-desc">Version control, branching strategies, PR reviews, and collaborative team workflows.</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-width="95"></div>
+          </div>
+          <span class="skill-percent">95%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="rgba(99,102,241,0.15)" />
+              <rect x="9" y="9" width="22" height="22" rx="3" stroke="#a78bfa" stroke-width="2" />
+              <rect x="14" y="14" width="5" height="5" rx="1" fill="#a78bfa" />
+              <rect x="21" y="14" width="5" height="5" rx="1" fill="#a78bfa" opacity="0.5" />
+              <rect x="14" y="21" width="5" height="5" rx="1" fill="#a78bfa" opacity="0.5" />
+              <rect x="21" y="21" width="5" height="5" rx="1" fill="#a78bfa" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Figma → Flutter UI</h3>
+          <p class="skill-desc">Translating complex Figma designs into precise, animated Flutter widgets with
+            pixel-perfect accuracy.</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-width="95"></div>
+          </div>
+          <span class="skill-percent">95%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Production Apps</span>
+        <h2 class="section-title">Real Apps. Real Users.<br /><span class="gradient-text">Real Impact.</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Category: Mobile Apps -->
+        <div class="project-category">
+          <h3 class="project-category-title">Mobile Applications</h3>
+        </div>
+
+        <!-- Legal Ace -->
+        <a href="https://play.google.com/store/apps/details?id=com.barquest.barquest" target="_blank" rel="noopener"
+          class="project-card-link" style="text-decoration: none; color: inherit; display: block;">
+          <div class="project-card project-card--featured">
+            <div class="project-header">
+              <div class="project-icon pi-legal">
+                <img src="assets/legalAce.png" alt="Legal Ace"
+                  style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+              </div>
+              <div class="project-title-wrap">
+                <h3 class="project-title">Legal Ace</h3>
+                <span class="project-badge badge-store">▶ Play Store</span>
+              </div>
+            </div>
+            <p class="project-desc">AI-powered legal study mobile app published on the Play Store. Built for law
+              students
+              with smart case briefs, quiz modules, cold-call practice sessions, and collaborative group audio
+              discussions.</p>
+            <ul class="project-features">
+              <li><span class="feat-dot"></span>AI-generated case briefs &amp; summaries</li>
+              <li><span class="feat-dot"></span>Interactive quiz &amp; cold-call practice</li>
+              <li><span class="feat-dot"></span>Group audio study rooms</li>
+              <li><span class="feat-dot"></span>Published &amp; used by real law students</li>
+            </ul>
+            <div class="project-stack">
+              <span class="stack-tag">Flutter</span>
+              <span class="stack-tag">Firebase</span>
+              <span class="stack-tag">AI APIs</span>
+              <span class="stack-tag">Audio SDK</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Vera Live -->
+        <div class="project-card project-card--featured">
+          <div class="project-header">
+            <div class="project-icon pi-live">
+              <img src="assets/veraAppLogo.png" alt="Vera Live"
+                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            </div>
+            <div class="project-title-wrap">
+              <h3 class="project-title">Vera Live App</h3>
+              <span class="project-badge badge-live">🔴 LIVE</span>
+            </div>
+          </div>
+          <p class="project-desc">Full-featured live audio and video streaming platform with multi-seat room management,
+            a
+            complete virtual economy (coins, diamonds, gifts), real-time rankings, and a wallet system.</p>
+          <ul class="project-features">
+            <li><span class="feat-dot"></span>Multi-seat live audio and video rooms with Agora</li>
+            <li><span class="feat-dot"></span>Virtual gifting &amp; gift animations</li>
+            <li><span class="feat-dot"></span>Wallet, coins &amp; diamonds system</li>
+            <li><span class="feat-dot"></span>Real-time leaderboards &amp; rankings</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">Flutter</span>
+            <span class="stack-tag">Agora SDK</span>
+            <span class="stack-tag">Socket.io</span>
+            <span class="stack-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Omly Chat -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon pi-chat">
+              <img src="assets/omlyChat.png" alt="Omly Chat"
+                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            </div>
+            <div class="project-title-wrap">
+              <h3 class="project-title">Omly Chat App</h3>
+              <span class="project-badge badge-realtime">⚡ Real-Time</span>
+            </div>
+          </div>
+          <p class="project-desc">Feature-rich social app combining one-to-one messaging and group audio rooms with live
+            gifting and a smooth live-app-style UI experience.</p>
+          <ul class="project-features">
+            <li><span class="feat-dot"></span>Real-time 1-to-1 &amp; group chat</li>
+            <li><span class="feat-dot"></span>Group audio rooms</li>
+            <li><span class="feat-dot"></span>Real-time gift sync &amp; animations</li>
+            <li><span class="feat-dot"></span>Smooth live-app-style UI</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">Flutter</span>
+            <span class="stack-tag">Firebase</span>
+            <span class="stack-tag">GetX</span>
+          </div>
+        </div>
+
+        <!-- TRACAM -->
+        <div class="project-card project-card--featured">
+          <div class="project-header">
+            <div class="project-icon">
+              <img src="assets/tracam.png" alt="TRACAM"
+                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            </div>
+            <div class="project-title-wrap">
+              <h3 class="project-title">TRACAM – AI PTZ Auto-Tracking</h3>
+              <span class="project-badge badge-complex">🎥 AI + Streaming</span>
+            </div>
+          </div>
+          <p class="project-desc">AI-assisted PTZ auto-tracking mobile system for track & field events. Enables
+            automatic race tracking with a PTZ camera and live streaming directly to YouTube.</p>
+          <ul class="project-features">
+            <li><span class="feat-dot"></span>Visual track setup with multiple track types</li>
+            <li><span class="feat-dot"></span>IP-based PTZ camera control (VISCA/ONVIF)</li>
+            <li><span class="feat-dot"></span>RTMP live streaming directly to YouTube</li>
+            <li><span class="feat-dot"></span>Intelligent AI lead-pack tracking</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">Flutter</span>
+            <span class="stack-tag">RTMP</span>
+            <span class="stack-tag">AI Tracking</span>
+            <span class="stack-tag">PTZ IP</span>
+          </div>
+        </div>
+
+        <!-- Car Assist -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon pi-car">
+              <img src="assets/carassest.png" alt="Car Assist"
+                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            </div>
+            <div class="project-title-wrap">
+              <h3 class="project-title">Car Assist</h3>
+              <span class="project-badge badge-complex">🏗️ Full-Stack</span>
+            </div>
+          </div>
+          <p class="project-desc">Complete car-sharing platform with dual roles (borrower &amp; lender), eKYC
+            onboarding, secure payments, and real-time chat.</p>
+          <ul class="project-features">
+            <li><span class="feat-dot"></span>Borrower &amp; lender dual-role system</li>
+            <li><span class="feat-dot"></span>eKYC identity verification</li>
+            <li><span class="feat-dot"></span>Real-time chat &amp; FCM notifications</li>
+            <li><span class="feat-dot"></span>Integrated secure payment systems</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">Flutter</span>
+            <span class="stack-tag">Firebase</span>
+            <span class="stack-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Fit_Jessie -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="22" fill="url(#g-fit)" />
+                <path d="M16 24h4l3-8 4 16 3-10 2 2h6" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <defs>
+                  <linearGradient id="g-fit" x1="0" y1="0" x2="48" y2="48">
+                    <stop stop-color="#10b981" />
+                    <stop offset="1" stop-color="#06b6d4" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="project-title-wrap">
+              <h3 class="project-title">Fit_Jessie</h3>
+              <span class="project-badge badge-store">💪 Fitness App</span>
+            </div>
+          </div>
+          <p class="project-desc">Modern fitness & gym mobile application helping users manage workouts, training
+            routines, and overall fitness journey.</p>
+          <ul class="project-features">
+            <li><span class="feat-dot"></span>Workout plans & tracking routines</li>
+            <li><span class="feat-dot"></span>Clean user-friendly gym interface</li>
+            <li><span class="feat-dot"></span>Scalable architecture with GetX</li>
+            <li><span class="feat-dot"></span>Secure data persistence</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">Flutter</span>
+            <span class="stack-tag">REST APIs</span>
+            <span class="stack-tag">GetX</span>
+          </div>
+        </div>
+
+        <!-- Category: Web Apps & Panels -->
+        <div class="project-category" style="margin-top: 60px;">
+          <h3 class="project-category-title">Web Applications & Admin Panels</h3>
+        </div>
+
+        <!-- Lifedock (NEW) -->
+        <div class="project-card project-card--featured project-card--wide">
+          <div class="project-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="22" fill="url(#g-life2)" />
+                <path d="M24 12v24M12 24h24" stroke="white" stroke-width="3" stroke-linecap="round" />
+                <defs>
+                  <linearGradient id="g-life2" x1="0" y1="0" x2="48" y2="48">
+                    <stop stop-color="#10b981" />
+                    <stop offset="1" stop-color="#3b82f6" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="project-title-wrap">
+              <h3 class="project-title">Lifedock</h3>
+              <span class="project-badge badge-complex">🏥 Healthcare Platform</span>
+            </div>
+          </div>
+          <p class="project-desc">Modern healthcare platform connecting doctors and patients, enabling smooth
+            communication and appointment management with secure access controls.</p>
+          <ul class="project-features">
+            <li><span class="feat-dot"></span>Role-based access (Doctors, Patients, Admin)</li>
+            <li><span class="feat-dot"></span>Easy appointment booking & schedule management</li>
+            <li><span class="feat-dot"></span>Secure patient data with Firebase Realtime/Firestore</li>
+            <li><span class="feat-dot"></span>Scalable architecture for healthcare features</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">Flutter Web</span>
+            <span class="stack-tag">Firebase</span>
+            <span class="stack-tag">Firestore</span>
+            <span class="stack-tag">Clean Arch</span>
+          </div>
+        </div>
+
+        <!-- Admin Panels -->
+        <div class="project-card project-card--featured project-card--wide">
+          <div class="project-header">
+            <div class="project-icon pi-admin">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="22" fill="url(#g-admin2)" />
+                <rect x="12" y="16" width="24" height="16" rx="2" stroke="white" stroke-width="2" />
+                <path d="M17 20h14M17 24h8" stroke="white" stroke-width="2" stroke-linecap="round" />
+                <defs>
+                  <linearGradient id="g-admin2" x1="0" y1="0" x2="48" y2="48">
+                    <stop stop-color="#8b5cf6" />
+                    <stop offset="1" stop-color="#3b82f6" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="project-title-wrap">
+              <h3 class="project-title">Admin / Live Panels</h3>
+              <span class="project-badge badge-complex">🛠️ Internal Tools</span>
+            </div>
+          </div>
+          <p class="project-desc">Flutter-built admin dashboards powering live audio apps — covering user moderation,
+            virtual economy management, badge assignment, and real-time room monitoring.</p>
+          <ul class="project-features">
+            <li><span class="feat-dot"></span>User moderation &amp; economy controls via Firebase</li>
+            <li><span class="feat-dot"></span>VIP badge &amp; level assignment</li>
+            <li><span class="feat-dot"></span>Real-time audio room monitoring</li>
+            <li><span class="feat-dot"></span>Scalable multi-app infrastructure with Firebase</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">Flutter</span>
+            <span class="stack-tag">Firebase</span>
+            <span class="stack-tag">Firestore</span>
+            <span class="stack-tag">GetX</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item timeline-item--active">
+          <div class="timeline-marker">
+            <div class="marker-pulse"></div>
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="tl-role">Flutter Developer</h3>
+                <span class="tl-company">Quant Aeonix</span>
+              </div>
+              <div class="tl-right">
+                <span class="tl-period">Nov 2024 – Present</span>
+                <span class="tl-badge tl-badge--active">Current</span>
+              </div>
+            </div>
+            <ul class="tl-list">
+              <li>Developing scalable Flutter mobile applications for production environments</li>
+              <li>Firebase &amp; REST API integration with clean architecture patterns</li>
+              <li>Implementing real-time features including live audio rooms and gift systems</li>
+              <li>Performance optimization and code quality across cross-functional teams</li>
+            </ul>
+            <div class="tl-tech">
+              <span class="tl-tag">Flutter</span>
+              <span class="tl-tag">Firebase</span>
+              <span class="tl-tag">Agora</span>
+              <span class="tl-tag">Socket.io</span>
+              <span class="tl-tag">GetX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="tl-role">Flutter Developer Trainee</h3>
+                <span class="tl-company">Logic Craft Technologies</span>
+              </div>
+              <div class="tl-right">
+                <span class="tl-period">Apr 2024 – Nov 2024</span>
+                <span class="tl-badge">6 Months</span>
+              </div>
+            </div>
+            <ul class="tl-list">
+              <li>Completed 6-month intensive professional Flutter development training</li>
+              <li>Built production-ready mobile applications from concept to deployment</li>
+              <li>Improved app performance by up to 30% through profiling and optimization</li>
+              <li>Mastered GetX, Sqflite alongside clean architectural patterns</li>
+            </ul>
+            <div class="tl-tech">
+              <span class="tl-tag">Flutter</span>
+              <span class="tl-tag">GetX</span>
+              <span class="tl-tag">Sqflite</span>
+              <span class="tl-tag">Firebase</span>
+              <span class="tl-tag">Clean Arch</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education & Languages -->
+      <div class="edu-lang-grid">
+        <div class="edu-card">
+          <h3 class="edu-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+            Education
+          </h3>
+          <div class="edu-items">
+            <div class="edu-item">
+              <span class="edu-dot"></span>
+              <div>
+                <strong>FSC Computer Science</strong>
+                <span>Pre-Engineering with CS focus</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <span class="edu-dot"></span>
+              <div>
+                <strong>Diploma in Information Technology</strong>
+                <span>Professional IT certification</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <span class="edu-dot edu-dot--accent"></span>
+              <div>
+                <strong>Professional Flutter Training</strong>
+                <span>6-Month intensive program @ Logic Craft</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lang-card">
+          <h3 class="edu-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a10 10 0 100 20A10 10 0 0012 2z" />
+              <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+            </svg>
+            Languages
+          </h3>
+          <div class="lang-items">
+            <div class="lang-item">
+              <span class="lang-flag">🇺🇸</span>
+              <div>
+                <strong>English</strong>
+                <span class="lang-level">Professional Proficiency</span>
+              </div>
+            </div>
+            <div class="lang-item">
+              <span class="lang-flag">🇵🇰</span>
+              <div>
+                <strong>Urdu</strong>
+                <span class="lang-level">Native Speaker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Build Something<br /><span class="gradient-text">Great Together</span></h2>
+        <p class="section-sub">Open to Flutter development roles, freelance projects, and exciting collaborations.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="contact-info-card">
+            <h3>Reach Me Directly</h3>
+            <div class="contact-details">
+              <a href="mailto:inisar.mail@gmail.com" class="contact-detail-row">
+                <div class="cd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="cd-label">Email</span>
+                  <span class="cd-value">inisar.mail@gmail.com</span>
+                </div>
+              </a>
+              <a href="tel:+923369420295" class="contact-detail-row">
+                <div class="cd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="cd-label">Phone</span>
+                  <span class="cd-value">+92 336 9420295</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-nisar-b84a46363/" target="_blank" rel="noopener"
+                class="contact-detail-row">
+                <div class="cd-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="cd-label">LinkedIn</span>
+                  <span class="cd-value">muhammad-nisar-b84a46363</span>
+                </div>
+              </a>
+              <div class="contact-detail-row">
+                <div class="cd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="cd-label">Location</span>
+                  <span class="cd-value">Islamabad, Pakistan</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="https://www.linkedin.com/in/muhammad-nisar-b84a46363/" class="social-btn social-btn--linkedin"
+                target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                Connect on LinkedIn
+              </a>
+              <a href="mailto:inisar.mail@gmail.com" class="social-btn social-btn--email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                Send an Email
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required
+                autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Flutter Developer Position" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="Hi Muhammad, I'd like to discuss a Flutter project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Message sent! I'll get back to you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand">
+            <span class="brand-flutter">Muhammad</span> <span class="brand-craft">Nisar</span>
+          </a>
+          <p>Flutter Mobile App Developer building real-time, scalable, and user-focused mobile applications.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <a href="mailto:inisar.mail@gmail.com">inisar.mail@gmail.com</a>
+          <a href="tel:+923369420295">+92 336 9420295</a>
+          <a href="https://www.linkedin.com/in/muhammad-nisar-b84a46363/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 FlutterCraft by Muhammad Nisar. All rights reserved.</p>
+        <p>Built with <span class="footer-heart">♥</span> in Islamabad, Pakistan</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
