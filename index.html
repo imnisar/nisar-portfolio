@@ -20,12 +20,34 @@
 
 <body>
 
-  <!-- ── NAVBAR ── -->
+  <!-- ── TOP BAR ── -->
+  <nav class="top-bar">
+    <div class="top-bar-container">
+      <div class="top-bar-brand">
+        <span class="brand-name"><span class="brand-first">Muhammad</span> <span class="brand-last">Nisar</span></span>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── BOTTOM NAVIGATION ── -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-brand">
-        <span class="brand-flutter">Muhammad</span> <span class="brand-craft">Nisar</span>
-      </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -33,10 +55,6 @@
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-      <a href="#contact" class="nav-cta">Hire Me</a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </nav>
 
@@ -437,214 +455,137 @@
         </div>
 
         <!-- Legal Ace -->
-        <a href="https://play.google.com/store/apps/details?id=com.barquest.barquest" target="_blank" rel="noopener"
-          class="project-card-link" style="text-decoration: none; color: inherit; display: block;">
-          <div class="project-card project-card--featured">
-            <div class="project-header">
-              <div class="project-icon pi-legal">
-                <img src="assets/legalAce.png" alt="Legal Ace"
-                  style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-              </div>
-              <div class="project-title-wrap">
-                <h3 class="project-title">Legal Ace</h3>
-                <span class="project-badge badge-store">▶ Play Store</span>
-              </div>
+        <div class="project-card-v2" data-title="Legal Ace" data-category="Mobile Application"
+          data-image="assets/legalAce.png"
+          data-description="AI-powered legal study mobile app published on the Play Store. Built for law students with smart case briefs, quiz modules, cold-call practice sessions, and collaborative group audio discussions."
+          data-stack="Flutter, Firebase, AI APIs, Audio SDK"
+          data-playstore="https://play.google.com/store/apps/details?id=com.barquest.barquest">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="assets/legalAce.png" alt="Legal Ace">
             </div>
-            <p class="project-desc">AI-powered legal study mobile app published on the Play Store. Built for law
-              students
-              with smart case briefs, quiz modules, cold-call practice sessions, and collaborative group audio
-              discussions.</p>
-            <ul class="project-features">
-              <li><span class="feat-dot"></span>AI-generated case briefs &amp; summaries</li>
-              <li><span class="feat-dot"></span>Interactive quiz &amp; cold-call practice</li>
-              <li><span class="feat-dot"></span>Group audio study rooms</li>
-              <li><span class="feat-dot"></span>Published &amp; used by real law students</li>
-            </ul>
-            <div class="project-stack">
-              <span class="stack-tag">Flutter</span>
-              <span class="stack-tag">Firebase</span>
-              <span class="stack-tag">AI APIs</span>
-              <span class="stack-tag">Audio SDK</span>
-            </div>
+            <h3 class="project-title-v2">Legal Ace</h3>
+            <button class="view-more-btn">
+              <span>View More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
-        </a>
+        </div>
 
         <!-- Copono -->
-        <a href="https://play.google.com/store/apps/details?id=com.copono.copono" target="_blank" rel="noopener"
-          class="project-card-link" style="text-decoration: none; color: inherit; display: block;">
-          <div class="project-card project-card--featured">
-            <div class="project-header">
-              <div class="project-icon">
-                <img src="assets/copono.png" alt="Copono"
-                  style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-              </div>
-              <div class="project-title-wrap">
-                <h3 class="project-title">Copono</h3>
-                <span class="project-badge badge-store">▶ Play Store</span>
-              </div>
+        <div class="project-card-v2" data-title="Copono" data-category="Mobile Application"
+          data-image="assets/copono.png"
+          data-description="Developed and deployed Copono, a rewards-based coupon mobile application that enables users to earn points by uploading purchase receipts and compete for monthly cash prizes up to 10,000 SAR."
+          data-stack="Flutter, SAR Rewards, Multi-Language, Receipt Upload"
+          data-playstore="https://play.google.com/store/apps/details?id=com.copono.copono">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="assets/copono.png" alt="Copono">
             </div>
-            <p class="project-desc">Developed and deployed Copono, a rewards-based coupon mobile application that
-              enables users to earn points by uploading purchase receipts and compete for monthly cash prizes up to
-              10,000 SAR.</p>
-            <ul class="project-features">
-              <li><span class="feat-dot"></span>Rewards-based coupon mobile application</li>
-              <li><span class="feat-dot"></span>Earn points by uploading purchase receipts</li>
-              <li><span class="feat-dot"></span>Supports Arabic & English languages</li>
-              <li><span class="feat-dot"></span>Tailored for local market with SAR-based rewards</li>
-            </ul>
-            <div class="project-stack">
-              <span class="stack-tag">Flutter</span>
-              <span class="stack-tag">SAR Rewards</span>
-              <span class="stack-tag">Multi-Language</span>
-              <span class="stack-tag">Receipt Upload</span>
-            </div>
+            <h3 class="project-title-v2">Copono</h3>
+            <button class="view-more-btn">
+              <span>View More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
-        </a>
+        </div>
 
         <!-- Vera Live -->
-        <div class="project-card project-card--featured">
-          <div class="project-header">
-            <div class="project-icon pi-live">
-              <img src="assets/veraAppLogo.png" alt="Vera Live"
-                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+        <div class="project-card-v2" data-title="Vera Live App" data-category="Mobile Application"
+          data-image="assets/veraAppLogo.png"
+          data-description="Full-featured live audio and video streaming platform with multi-seat room management, a complete virtual economy (coins, diamonds, gifts), real-time rankings, and a wallet system."
+          data-stack="Flutter, Agora SDK, Socket.io, REST APIs">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="assets/veraAppLogo.png" alt="Vera Live">
             </div>
-            <div class="project-title-wrap">
-              <h3 class="project-title">Vera Live App</h3>
-              <span class="project-badge badge-live">🔴 LIVE</span>
-            </div>
-          </div>
-          <p class="project-desc">Full-featured live audio and video streaming platform with multi-seat room management,
-            a
-            complete virtual economy (coins, diamonds, gifts), real-time rankings, and a wallet system.</p>
-          <ul class="project-features">
-            <li><span class="feat-dot"></span>Multi-seat live audio and video rooms with Agora</li>
-            <li><span class="feat-dot"></span>Virtual gifting &amp; gift animations</li>
-            <li><span class="feat-dot"></span>Wallet, coins &amp; diamonds system</li>
-            <li><span class="feat-dot"></span>Real-time leaderboards &amp; rankings</li>
-          </ul>
-          <div class="project-stack">
-            <span class="stack-tag">Flutter</span>
-            <span class="stack-tag">Agora SDK</span>
-            <span class="stack-tag">Socket.io</span>
-            <span class="stack-tag">REST APIs</span>
+            <h3 class="project-title-v2">Vera Live App</h3>
+            <button class="view-more-btn">
+              <span>View More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
 
         <!-- Omly Chat -->
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon pi-chat">
-              <img src="assets/omlyChat.png" alt="Omly Chat"
-                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+        <div class="project-card-v2" data-title="Omly Chat App" data-category="Mobile Application"
+          data-image="assets/omlyChat.png"
+          data-description="Feature-rich social app combining one-to-one messaging and group audio rooms with live gifting and a smooth live-app-style UI experience."
+          data-stack="Flutter, Firebase, GetX">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="assets/omlyChat.png" alt="Omly Chat">
             </div>
-            <div class="project-title-wrap">
-              <h3 class="project-title">Omly Chat App</h3>
-              <span class="project-badge badge-realtime">⚡ Real-Time</span>
-            </div>
-          </div>
-          <p class="project-desc">Feature-rich social app combining one-to-one messaging and group audio rooms with live
-            gifting and a smooth live-app-style UI experience.</p>
-          <ul class="project-features">
-            <li><span class="feat-dot"></span>Real-time 1-to-1 &amp; group chat</li>
-            <li><span class="feat-dot"></span>Group audio rooms</li>
-            <li><span class="feat-dot"></span>Real-time gift sync &amp; animations</li>
-            <li><span class="feat-dot"></span>Smooth live-app-style UI</li>
-          </ul>
-          <div class="project-stack">
-            <span class="stack-tag">Flutter</span>
-            <span class="stack-tag">Firebase</span>
-            <span class="stack-tag">GetX</span>
+            <h3 class="project-title-v2">Omly Chat App</h3>
+            <button class="view-more-btn">
+              <span>View More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
 
         <!-- TRACAM -->
-        <div class="project-card project-card--featured">
-          <div class="project-header">
-            <div class="project-icon">
-              <img src="assets/tracam.png" alt="TRACAM"
-                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+        <div class="project-card-v2" data-title="TRACAM – AI PTZ Auto-Tracking" data-category="Mobile Application"
+          data-image="assets/tracam.png"
+          data-description="AI-assisted PTZ auto-tracking mobile system for track & field events. Enables automatic race tracking with a PTZ camera and live streaming directly to YouTube."
+          data-stack="Flutter, RTMP, AI Tracking, PTZ IP">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="assets/tracam.png" alt="TRACAM">
             </div>
-            <div class="project-title-wrap">
-              <h3 class="project-title">TRACAM – AI PTZ Auto-Tracking</h3>
-              <span class="project-badge badge-complex">🎥 AI + Streaming</span>
-            </div>
-          </div>
-          <p class="project-desc">AI-assisted PTZ auto-tracking mobile system for track & field events. Enables
-            automatic race tracking with a PTZ camera and live streaming directly to YouTube.</p>
-          <ul class="project-features">
-            <li><span class="feat-dot"></span>Visual track setup with multiple track types</li>
-            <li><span class="feat-dot"></span>IP-based PTZ camera control (VISCA/ONVIF)</li>
-            <li><span class="feat-dot"></span>RTMP live streaming directly to YouTube</li>
-            <li><span class="feat-dot"></span>Intelligent AI lead-pack tracking</li>
-          </ul>
-          <div class="project-stack">
-            <span class="stack-tag">Flutter</span>
-            <span class="stack-tag">RTMP</span>
-            <span class="stack-tag">AI Tracking</span>
-            <span class="stack-tag">PTZ IP</span>
+            <h3 class="project-title-v2">TRACAM</h3>
+            <button class="view-more-btn">
+              <span>View More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
 
         <!-- Car Assist -->
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon pi-car">
-              <img src="assets/carassest.png" alt="Car Assist"
-                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+        <div class="project-card-v2" data-title="Car Assist" data-category="Mobile Application"
+          data-image="assets/carassest.png"
+          data-description="Complete car-sharing platform with dual roles (borrower & lender), eKYC onboarding, secure payments, and real-time chat."
+          data-stack="Flutter, Firebase, REST APIs">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="assets/carassest.png" alt="Car Assist">
             </div>
-            <div class="project-title-wrap">
-              <h3 class="project-title">Car Assist</h3>
-              <span class="project-badge badge-complex">🏗️ Full-Stack</span>
-            </div>
-          </div>
-          <p class="project-desc">Complete car-sharing platform with dual roles (borrower &amp; lender), eKYC
-            onboarding, secure payments, and real-time chat.</p>
-          <ul class="project-features">
-            <li><span class="feat-dot"></span>Borrower &amp; lender dual-role system</li>
-            <li><span class="feat-dot"></span>eKYC identity verification</li>
-            <li><span class="feat-dot"></span>Real-time chat &amp; FCM notifications</li>
-            <li><span class="feat-dot"></span>Integrated secure payment systems</li>
-          </ul>
-          <div class="project-stack">
-            <span class="stack-tag">Flutter</span>
-            <span class="stack-tag">Firebase</span>
-            <span class="stack-tag">REST APIs</span>
+            <h3 class="project-title-v2">Car Assist</h3>
+            <button class="view-more-btn">
+              <span>View More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
 
         <!-- Fit_Jessie -->
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <svg viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="24" r="22" fill="url(#g-fit)" />
-                <path d="M16 24h4l3-8 4 16 3-10 2 2h6" stroke="white" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <defs>
-                  <linearGradient id="g-fit" x1="0" y1="0" x2="48" y2="48">
-                    <stop stop-color="#10b981" />
-                    <stop offset="1" stop-color="#06b6d4" />
-                  </linearGradient>
-                </defs>
+        <div class="project-card-v2" data-title="Fit_Jessie" data-category="Mobile Application"
+          data-image="assets/fit jessi.svg"
+          data-description="Modern fitness & gym mobile application helping users manage workouts, training routines, and overall fitness journey."
+          data-stack="Flutter, REST APIs, GetX">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="assets/fit jessi.svg" alt="Fit_Jessie">
+            </div>
+            <h3 class="project-title-v2">Fit_Jessie</h3>
+            <button class="view-more-btn">
+              <span>View More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </div>
-            <div class="project-title-wrap">
-              <h3 class="project-title">Fit_Jessie</h3>
-              <span class="project-badge badge-store">💪 Fitness App</span>
-            </div>
-          </div>
-          <p class="project-desc">Modern fitness & gym mobile application helping users manage workouts, training
-            routines, and overall fitness journey.</p>
-          <ul class="project-features">
-            <li><span class="feat-dot"></span>Workout plans & tracking routines</li>
-            <li><span class="feat-dot"></span>Clean user-friendly gym interface</li>
-            <li><span class="feat-dot"></span>Scalable architecture with GetX</li>
-            <li><span class="feat-dot"></span>Secure data persistence</li>
-          </ul>
-          <div class="project-stack">
-            <span class="stack-tag">Flutter</span>
-            <span class="stack-tag">REST APIs</span>
-            <span class="stack-tag">GetX</span>
+            </button>
           </div>
         </div>
 
@@ -653,76 +594,41 @@
           <h3 class="project-category-title">Web Applications & Admin Panels</h3>
         </div>
 
-        <!-- Lifedock (NEW) -->
-        <div class="project-card project-card--featured project-card--wide">
-          <div class="project-header">
-            <div class="project-icon">
-              <svg viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="24" r="22" fill="url(#g-life2)" />
-                <path d="M24 12v24M12 24h24" stroke="white" stroke-width="3" stroke-linecap="round" />
-                <defs>
-                  <linearGradient id="g-life2" x1="0" y1="0" x2="48" y2="48">
-                    <stop stop-color="#10b981" />
-                    <stop offset="1" stop-color="#3b82f6" />
-                  </linearGradient>
-                </defs>
+        <!-- Lifedock -->
+        <div class="project-card-v2" data-title="Lifedock" data-category="Web Application / Healthcare"
+          data-image="assets/lifedock.png"
+          data-description="Modern healthcare platform connecting doctors and patients, enabling smooth communication and appointment management with secure access controls."
+          data-stack="Flutter Web, Firebase, Firestore, Clean Arch">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="assets/lifedock.png" alt="Lifedock">
+            </div>
+            <h3 class="project-title-v2">Lifedock</h3>
+            <button class="view-more-btn">
+              <span>View More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </div>
-            <div class="project-title-wrap">
-              <h3 class="project-title">Lifedock</h3>
-              <span class="project-badge badge-complex">🏥 Healthcare Platform</span>
-            </div>
-          </div>
-          <p class="project-desc">Modern healthcare platform connecting doctors and patients, enabling smooth
-            communication and appointment management with secure access controls.</p>
-          <ul class="project-features">
-            <li><span class="feat-dot"></span>Role-based access (Doctors, Patients, Admin)</li>
-            <li><span class="feat-dot"></span>Easy appointment booking & schedule management</li>
-            <li><span class="feat-dot"></span>Secure patient data with Firebase Realtime/Firestore</li>
-            <li><span class="feat-dot"></span>Scalable architecture for healthcare features</li>
-          </ul>
-          <div class="project-stack">
-            <span class="stack-tag">Flutter Web</span>
-            <span class="stack-tag">Firebase</span>
-            <span class="stack-tag">Firestore</span>
-            <span class="stack-tag">Clean Arch</span>
+            </button>
           </div>
         </div>
 
         <!-- Admin Panels -->
-        <div class="project-card project-card--featured project-card--wide">
-          <div class="project-header">
-            <div class="project-icon pi-admin">
-              <svg viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="24" r="22" fill="url(#g-admin2)" />
-                <rect x="12" y="16" width="24" height="16" rx="2" stroke="white" stroke-width="2" />
-                <path d="M17 20h14M17 24h8" stroke="white" stroke-width="2" stroke-linecap="round" />
-                <defs>
-                  <linearGradient id="g-admin2" x1="0" y1="0" x2="48" y2="48">
-                    <stop stop-color="#8b5cf6" />
-                    <stop offset="1" stop-color="#3b82f6" />
-                  </linearGradient>
-                </defs>
+        <div class="project-card-v2" data-title="Admin / Live Panels" data-category="Internal Tools / Admin Panels"
+          data-image="assets/live pannel.svg"
+          data-description="Flutter-built admin dashboards powering live audio apps — covering user moderation, virtual economy management, badge assignment, and real-time room monitoring."
+          data-stack="Flutter, Firebase, Firestore, GetX">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="assets/live pannel.svg" alt="Admin Panels">
+            </div>
+            <h3 class="project-title-v2">Admin / Live Panels</h3>
+            <button class="view-more-btn">
+              <span>View More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </div>
-            <div class="project-title-wrap">
-              <h3 class="project-title">Admin / Live Panels</h3>
-              <span class="project-badge badge-complex">🛠️ Internal Tools</span>
-            </div>
-          </div>
-          <p class="project-desc">Flutter-built admin dashboards powering live audio apps — covering user moderation,
-            virtual economy management, badge assignment, and real-time room monitoring.</p>
-          <ul class="project-features">
-            <li><span class="feat-dot"></span>User moderation &amp; economy controls via Firebase</li>
-            <li><span class="feat-dot"></span>VIP badge &amp; level assignment</li>
-            <li><span class="feat-dot"></span>Real-time audio room monitoring</li>
-            <li><span class="feat-dot"></span>Scalable multi-app infrastructure with Firebase</li>
-          </ul>
-          <div class="project-stack">
-            <span class="stack-tag">Flutter</span>
-            <span class="stack-tag">Firebase</span>
-            <span class="stack-tag">Firestore</span>
-            <span class="stack-tag">GetX</span>
+            </button>
           </div>
         </div>
 
@@ -1024,6 +930,39 @@
       </div>
     </div>
   </footer>
+
+  <!-- ── PROJECT MODAL ── -->
+  <div id="projectModal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="modal-content">
+        <div class="modal-left">
+          <div class="modal-image-wrap">
+            <img id="modalImage" src="" alt="Project Image" />
+          </div>
+        </div>
+        <div class="modal-right">
+          <div id="modalCategory" class="modal-category"></div>
+          <h2 id="modalTitle" class="modal-title"></h2>
+          <div id="modalDescription" class="modal-description"></div>
+          <div class="modal-info-grid">
+            <div class="modal-info-item">
+              <strong>Technologies</strong>
+              <div id="modalStack" class="modal-stack"></div>
+            </div>
+          </div>
+          <div id="modalActions" class="modal-actions">
+            <!-- Buttons will be injected here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

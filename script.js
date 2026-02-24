@@ -5,30 +5,16 @@
 // ── Navbar scroll effect ──────────────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 30);
   updateActiveNav();
 }, { passive: true });
 
-// ── Mobile hamburger ──────────────────────────────
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  navLinks.classList.toggle('open');
-});
-navLinks.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-  });
-});
-
 // ── Active nav highlight ──────────────────────────
+const navLinks = document.getElementById('navLinks');
 const sections = document.querySelectorAll('section[id]');
 function updateActiveNav() {
   let current = '';
   sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 90) current = s.id;
+    if (window.scrollY >= s.offsetTop - 120) current = s.id;
   });
   navLinks.querySelectorAll('.nav-link').forEach(link => {
     link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
@@ -37,7 +23,7 @@ function updateActiveNav() {
 
 // ── Reveal on scroll (only elements BELOW the fold) ──
 function addRevealClass() {
-  const selectors = '.skill-card, .project-card, .timeline-item, .highlight, .stat-card, .edu-card, .lang-card, .contact-info-card, .contact-form, .about-right, .about-left';
+  const selectors = '.skill-card, .project-card, .project-card-v2, .timeline-item, .highlight, .stat-card, .edu-card, .lang-card, .contact-info-card, .contact-form, .about-right, .about-left';
   document.querySelectorAll(selectors).forEach(el => {
     if (!el.closest('#hero')) {
       el.classList.add('reveal');
@@ -182,4 +168,91 @@ document.addEventListener('DOMContentLoaded', () => {
       el.style.transform = `translateY(${y * 0.04 * dir}px)`;
     });
   }, { passive: true });
+
+  // ── Project Modal Logic ─────────────────────────
+  const modal = document.getElementById('projectModal');
+  const modalContent = modal.querySelector('.modal-container');
+  const modalClose = document.getElementById('modalClose');
+  const modalOverlay = modal.querySelector('.modal-overlay');
+
+  const modalImg = document.getElementById('modalImage');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalCategory = document.getElementById('modalCategory');
+  const modalDesc = document.getElementById('modalDescription');
+  const modalStack = document.getElementById('modalStack');
+  const modalActions = document.getElementById('modalActions');
+
+  function openModal(data) {
+    modalImg.src = data.image;
+    modalImg.alt = data.title;
+    modalTitle.textContent = data.title;
+    modalCategory.textContent = data.category;
+    modalDesc.textContent = data.description;
+
+    // Build stack tags
+    modalStack.innerHTML = '';
+    data.stack.split(',').forEach(tech => {
+      const span = document.createElement('span');
+      span.className = 'stack-tag';
+      span.textContent = tech.trim();
+      modalStack.appendChild(span);
+    });
+
+    // Build actions
+    modalActions.innerHTML = '';
+    if (data.playstore) {
+      const a = document.createElement('a');
+      a.href = data.playstore;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.className = 'btn-playstore';
+      a.innerHTML = `
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L18.65,14.12C20.45,13.14 20.45,10.86 18.65,9.88L16.81,8.88L14.4,11.29L16.81,15.12M4.6,1.41L14.44,11.25L17.55,8.14L5.6,1.41C5.3,1.24 4.93,1.24 4.6,1.41M4.6,22.59C4.93,22.76 5.3,22.76 5.6,22.59L17.55,15.86L14.44,12.75L4.6,22.59Z" />
+        </svg>
+        View on Play Store`;
+      modalActions.appendChild(a);
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent scroll
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.project-card-v2').forEach(card => {
+    card.addEventListener('click', () => {
+      openModal(card.dataset);
+    });
+  });
+
+  modalClose.addEventListener('click', closeModal);
+  modalOverlay.addEventListener('click', closeModal);
+
+
+  // Close on ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // ── Theme Toggle Logic ────────────────────────────
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
+
+  // Check for saved theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    body.classList.add('light-theme');
+  }
+
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    const isLight = body.classList.contains('light-theme');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
 });
