@@ -2271,19 +2271,25 @@ svg {
   }
 
   .scroll-mouse {
-    width: 16px !important;
-    height: 26px !important;
-    border-width: 1px !important;
-    padding-top: 4px !important;
+    width: 22px !important;
+    /* Increased from 16px */
+    height: 36px !important;
+    /* Increased from 26px */
+    border-width: 2px !important;
+    /* Slightly thicker border */
+    padding-top: 6px !important;
   }
 
   .scroll-wheel {
-    width: 3px !important;
-    height: 6px !important;
+    width: 4px !important;
+    /* Increased from 3px */
+    height: 8px !important;
+    /* Increased from 6px */
   }
 
   .hero-scroll-indicator span {
-    font-size: 8px !important;
-    margin-top: 4px !important;
+    font-size: 10px !important;
+    /* Increased from 8px */
+    margin-top: 6px !important;
   }
 }
