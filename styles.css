@@ -2225,42 +2225,49 @@ svg {
 
   .hero-socials {
     position: absolute !important;
-    left: -45px !important;
-    /* Positioned relative to the 140px image container */
-    top: 50% !important;
+    left: -55px !important;
+    /* Increased distance from image */
+    top: 70% !important;
+    /* Moved lower towards bottom of arch */
     transform: translateY(-50%) !important;
     background: rgba(15, 23, 42, 0.4) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    padding: 10px 2px !important;
+    padding: 12px 3px !important;
+    /* Slightly more padding */
     border-radius: 50px !important;
     z-index: 1000 !important;
-    gap: 12px !important;
+    gap: 14px !important;
+    /* Slightly more space between icons */
   }
 
   .hero-scroll-indicator {
     display: flex !important;
     position: absolute !important;
-    right: -45px !important;
-    /* Positioned relative to the 140px image container */
-    top: 50% !important;
+    right: -55px !important;
+    /* Increased distance from image */
+    top: 70% !important;
+    /* Moved lower towards bottom of arch */
     transform: translateY(-50%) !important;
     background: rgba(15, 23, 42, 0.4) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    padding: 10px 2px !important;
+    padding: 12px 3px !important;
     border-radius: 50px !important;
     z-index: 1000 !important;
   }
 
   .social-icon-link {
-    width: 22px !important;
-    height: 22px !important;
+    width: 26px !important;
+    /* Increased size */
+    height: 26px !important;
+    /* Increased size */
   }
 
   .social-icon-link svg {
-    width: 14px !important;
-    height: 14px !important;
+    width: 16px !important;
+    /* Increased icon inside */
+    height: 16px !important;
   }
 
   .scroll-mouse {
