@@ -188,7 +188,7 @@ svg {
 }
 
 .top-bar-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -304,9 +304,7 @@ svg {
   }
 }
 
-.light-theme .navbar {
-  /* No changes needed to width/height, just colors */
-}
+
 
 .light-theme .nav-container {
   background: rgba(255, 255, 255, 0.7);
@@ -326,12 +324,11 @@ svg {
 
 /* Theme Toggle */
 .theme-toggle {
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid var(--border2);
+  background: none;
+  border: none;
   color: var(--white);
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,13 +338,13 @@ svg {
 }
 
 .theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.12);
+  opacity: 0.8;
   transform: translateY(-1px);
 }
 
 .theme-toggle svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -369,13 +366,13 @@ svg {
 }
 
 .light-theme .theme-toggle {
-  background: rgba(0, 0, 0, 0.05);
-  border-color: rgba(0, 0, 0, 0.1);
+  background: none;
+  border: none;
   color: #0f172a;
 }
 
 .light-theme .theme-toggle:hover {
-  background: rgba(0, 0, 0, 0.08);
+  opacity: 0.8;
 }
 
 .hamburger {
@@ -423,7 +420,8 @@ svg {
 /* Left Social Icons Column */
 .hero-socials {
   position: absolute;
-  left: 32px;
+  left: -180px;
+  /* Positioned just outside the main content on desktop */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -460,8 +458,17 @@ svg {
   margin-top: 4px;
 }
 
+@media (max-width: 1300px) {
+  .hero-socials {
+    left: 20px;
+    /* Bring inside on narrower screens */
+  }
+}
+
 @media (max-width: 768px) {
   .hero-socials {
+    position: fixed;
+    /* Keep pinned for mobile if preferred, or absolute within section */
     left: 12px;
     background: rgba(15, 23, 42, 0.4);
     backdrop-filter: blur(10px);
@@ -516,7 +523,7 @@ svg {
 }
 
 .hero-name {
-  font-size: clamp(42px, 7vw, 80px);
+  font-size: clamp(36px, 6vw, 64px);
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -580,7 +587,8 @@ svg {
 /* Right Scroll Indicator */
 .hero-scroll-indicator {
   position: absolute;
-  right: 32px;
+  right: -180px;
+  /* Positioned just outside the main content on desktop */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -588,6 +596,12 @@ svg {
   align-items: center;
   gap: 12px;
   z-index: 2;
+}
+
+@media (max-width: 1300px) {
+  .hero-scroll-indicator {
+    right: 20px;
+  }
 }
 
 .hero-scroll-indicator span {
@@ -1219,14 +1233,41 @@ svg {
   background: linear-gradient(135deg, #0f172a, #162038);
 }
 
+.light-theme .skill-card--primary {
+  background: var(--navy-card);
+  border-color: var(--border2);
+}
+
 .skill-card--hot {
   border-color: rgba(239, 68, 68, 0.2);
 }
 
 .skill-icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 14px;
+  width: 52px;
+  height: 52px;
+  background: rgba(14, 165, 233, 0.1);
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.light-theme .skill-icon {
+  background: rgba(14, 165, 233, 0.08);
+}
+
+.skill-icon img,
+.skill-icon svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skill-icon img {
+  border-radius: 4px;
 }
 
 .skill-name {
@@ -1249,6 +1290,10 @@ svg {
   border-radius: 2px;
   overflow: hidden;
   margin-bottom: 6px;
+}
+
+.light-theme .skill-level {
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .skill-bar {
