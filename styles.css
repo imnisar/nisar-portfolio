@@ -466,43 +466,6 @@ svg {
   }
 }
 
-@media (max-width: 768px) {
-  .hero-socials {
-    position: fixed;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(15, 23, 42, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 12px 4px;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-  }
-
-  .light-theme .hero-socials {
-    background: rgba(255, 255, 255, 0.6);
-    border-color: rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  }
-
-  .social-line {
-    display: none;
-  }
-
-  .social-icon-link {
-    width: 28px;
-    height: 28px;
-  }
-
-  .social-icon-link svg {
-    width: 16px;
-    height: 16px;
-  }
-}
-
 /* Hero Center Content */
 .hero-center {
   position: relative;
@@ -518,26 +481,6 @@ svg {
   gap: 0;
 }
 
-@media (max-width: 768px) {
-  .hero-center {
-    padding-top: 100px;
-  }
-
-  .hero-name {
-    font-size: 28px !important;
-    margin-bottom: 16px;
-  }
-
-  .hero-arch {
-    width: 160px;
-    height: 220px;
-    border-radius: 80px 80px 0 0;
-  }
-
-  .hero-arch-glow {
-    width: 180px;
-  }
-}
 
 .hero-hello {
   font-size: 18px;
@@ -625,24 +568,6 @@ svg {
 @media (max-width: 1300px) {
   .hero-scroll-indicator {
     right: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-scroll-indicator {
-    display: flex;
-    position: fixed;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(15, 23, 42, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 12px 4px;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    z-index: 100;
   }
 }
 
@@ -2284,5 +2209,72 @@ svg {
   .nav-link {
     padding: 8px 14px;
     font-size: 13px;
+  }
+}
+/* ── Extreme Mobile Hero Refinements (Matches Muneer Hasan UI) ── */
+@media (max-width: 768px) {
+  .hero-center {
+    padding-top: 100px !important;
+  }
+
+  .hero-name {
+    font-size: 28px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-arch {
+    width: 140px !important;
+    height: 190px !important;
+    border-radius: 70px 70px 0 0 !important;
+  }
+
+  .hero-arch-glow {
+    width: 160px !important;
+  }
+
+  .hero-socials {
+    position: fixed !important;
+    left: 4px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(15, 23, 42, 0.4) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    padding: 10px 2px !important;
+    border-radius: 50px !important;
+    z-index: 1000 !important;
+  }
+
+  .hero-scroll-indicator {
+    display: flex !important;
+    position: fixed !important;
+    right: 4px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(15, 23, 42, 0.4) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    padding: 10px 2px !important;
+    border-radius: 50px !important;
+    z-index: 1000 !important;
+  }
+
+  .social-icon-link {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .social-icon-link svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .scroll-mouse {
+    width: 18px !important;
+    height: 28px !important;
+  }
+
+  .hero-scroll-indicator span {
+    font-size: 9px !important;
   }
 }
