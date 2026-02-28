@@ -102,7 +102,7 @@ contactForm.addEventListener('submit', async (e) => {
 
   try {
     const formData = new FormData(contactForm);
-    const response = await fetch("https://formspree.io/f/mqakpnvb", { // Placeholder - user should replace with their own
+    const response = await fetch("https://formspree.io/f/mlgwvvaw", {
       method: "POST",
       body: formData,
       headers: {
