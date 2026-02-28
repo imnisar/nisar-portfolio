@@ -2195,7 +2195,18 @@ svg {
   }
 
   .footer-top {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+    gap: 32px !important;
+  }
+
+  .footer-brand p {
+    margin: 12px auto 0 !important;
+  }
+
+  .footer-bottom {
+    justify-content: center !important;
+    text-align: center !important;
   }
 
   .edu-lang-grid {
