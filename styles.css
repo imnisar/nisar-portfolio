@@ -2303,4 +2303,55 @@ svg {
     width: 15px !important;
     height: 15px !important;
   }
+
+  /* ── About Me Refinements ── */
+  .about-left {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .about-avatar {
+    width: 160px !important;
+    height: 160px !important;
+    margin: 0 auto 20px !important;
+  }
+
+  .about-stats {
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  .stat-card {
+    padding: 12px 6px !important;
+  }
+
+  .stat-num {
+    font-size: 22px !important;
+  }
+
+  .stat-label {
+    font-size: 9px !important;
+  }
+
+  .about-right {
+    text-align: center !important;
+  }
+
+  .about-text {
+    font-size: 15px !important;
+    text-align: center !important;
+  }
+
+  .about-highlights {
+    align-items: stretch !important;
+  }
+
+  .highlight {
+    text-align: left !important;
+  }
+
+  .about-links {
+    align-items: center !important;
+  }
 }
