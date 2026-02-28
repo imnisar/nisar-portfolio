@@ -2225,49 +2225,49 @@ svg {
 
   .hero-socials {
     position: absolute !important;
-    left: -55px !important;
-    /* Increased distance from image */
-    top: 70% !important;
-    /* Moved lower towards bottom of arch */
+    left: -58px !important;
+    /* Slightly more distance for larger icons */
+    top: 80% !important;
+    /* Moved even lower towards bottom of arch */
     transform: translateY(-50%) !important;
     background: rgba(15, 23, 42, 0.4) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    padding: 12px 3px !important;
-    /* Slightly more padding */
+    padding: 14px 4px !important;
+    /* Increased padding */
     border-radius: 50px !important;
     z-index: 1000 !important;
-    gap: 14px !important;
-    /* Slightly more space between icons */
+    gap: 16px !important;
+    /* Increased space between larger icons */
   }
 
   .hero-scroll-indicator {
     display: flex !important;
     position: absolute !important;
-    right: -55px !important;
-    /* Increased distance from image */
-    top: 70% !important;
-    /* Moved lower towards bottom of arch */
+    right: -58px !important;
+    /* Slightly more distance */
+    top: 80% !important;
+    /* Moved even lower towards bottom of arch */
     transform: translateY(-50%) !important;
     background: rgba(15, 23, 42, 0.4) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    padding: 12px 3px !important;
+    padding: 14px 4px !important;
     border-radius: 50px !important;
     z-index: 1000 !important;
   }
 
   .social-icon-link {
-    width: 26px !important;
-    /* Increased size */
-    height: 26px !important;
-    /* Increased size */
+    width: 32px !important;
+    /* Significantly larger size */
+    height: 32px !important;
+    /* Significantly larger size */
   }
 
   .social-icon-link svg {
-    width: 16px !important;
-    /* Increased icon inside */
-    height: 16px !important;
+    width: 18px !important;
+    /* Larger icon inside */
+    height: 18px !important;
   }
 
   .scroll-mouse {
