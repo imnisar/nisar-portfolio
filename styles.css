@@ -2225,8 +2225,8 @@ svg {
 
   .hero-socials {
     position: absolute !important;
-    left: -58px !important;
-    /* Slightly more distance for larger icons */
+    left: -72px !important;
+    /* Increased distance from image */
     top: 80% !important;
     /* Moved even lower towards bottom of arch */
     transform: translateY(-50%) !important;
@@ -2243,7 +2243,8 @@ svg {
   .hero-scroll-indicator {
     display: flex !important;
     position: absolute !important;
-    right: -58px !important;
+    right: -72px !important;
+    /* Increased distance */
     top: 0% !important;
     /* Aligned with top of the arch */
     transform: none !important;
