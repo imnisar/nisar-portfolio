@@ -2209,24 +2209,24 @@ svg {
   }
 
   .hero-arch-wrap {
-    width: 160px !important;
+    width: 140px !important;
     margin: 0 auto !important;
   }
 
   .hero-arch {
-    width: 160px !important;
-    height: 215px !important;
-    border-radius: 80px 80px 0 0 !important;
+    width: 140px !important;
+    height: 190px !important;
+    border-radius: 70px 70px 0 0 !important;
   }
 
   .hero-arch-glow {
-    width: 180px !important;
+    width: 160px !important;
   }
 
   .hero-socials {
     position: absolute !important;
-    left: -90px !important;
-    /* Satisfying "door door" requirement */
+    left: -58px !important;
+    /* Slightly more distance for larger icons */
     top: 80% !important;
     /* Moved even lower towards bottom of arch */
     transform: translateY(-50%) !important;
@@ -2243,8 +2243,7 @@ svg {
   .hero-scroll-indicator {
     display: flex !important;
     position: absolute !important;
-    right: -90px !important;
-    /* Satisfying "door door" requirement */
+    right: -58px !important;
     top: 0% !important;
     /* Aligned with top of the arch */
     transform: none !important;
