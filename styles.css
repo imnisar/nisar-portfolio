@@ -469,15 +469,17 @@ svg {
 @media (max-width: 768px) {
   .hero-socials {
     position: fixed;
-    /* Keep pinned for mobile if preferred, or absolute within section */
-    left: 12px;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
     background: rgba(15, 23, 42, 0.4);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 12px 6px;
+    padding: 12px 4px;
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 100;
   }
 
   .light-theme .hero-socials {
@@ -491,13 +493,13 @@ svg {
   }
 
   .social-icon-link {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 
   .social-icon-link svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -518,22 +520,22 @@ svg {
 
 @media (max-width: 768px) {
   .hero-center {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 
   .hero-name {
-    font-size: 32px !important;
-    margin-bottom: 20px;
+    font-size: 28px !important;
+    margin-bottom: 16px;
   }
 
   .hero-arch {
-    width: 180px;
-    height: 240px;
-    border-radius: 90px 90px 0 0;
+    width: 160px;
+    height: 220px;
+    border-radius: 80px 80px 0 0;
   }
 
   .hero-arch-glow {
-    width: 200px;
+    width: 180px;
   }
 }
 
@@ -628,7 +630,19 @@ svg {
 
 @media (max-width: 768px) {
   .hero-scroll-indicator {
-    display: none;
+    display: flex;
+    position: fixed;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 12px 4px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 100;
   }
 }
 
