@@ -2258,14 +2258,14 @@ svg {
   }
 
   .social-icon-link {
-    width: 28px !important;
-    /* Slightly reduced for balance */
-    height: 28px !important;
+    width: 24px !important;
+    /* Reduced further for balance */
+    height: 24px !important;
   }
 
   .social-icon-link svg {
-    width: 16px !important;
-    height: 16px !important;
+    width: 14px !important;
+    height: 14px !important;
   }
 
   .scroll-mouse {
