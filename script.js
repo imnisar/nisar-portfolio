@@ -23,9 +23,9 @@ function updateActiveNav() {
 
 // ── Reveal on scroll (only elements BELOW the fold) ──
 function addRevealClass() {
-  const selectors = '.skill-card, .project-card, .project-card-v2, .timeline-item, .highlight, .stat-card, .edu-card, .lang-card, .contact-info-card, .contact-form, .about-right, .about-left';
+  const selectors = '.section-header, .skill-card, .project-card, .project-card-v2, .timeline-item, .highlight, .stat-card, .edu-card, .lang-card, .contact-info-card, .contact-form, .about-right, .about-left, .hero-center > *';
   document.querySelectorAll(selectors).forEach(el => {
-    if (!el.closest('#hero')) {
+    if (!el.closest('#hero') || el.parentElement.classList.contains('hero-center')) {
       el.classList.add('reveal');
     }
   });
@@ -38,7 +38,7 @@ const revealObserver = new IntersectionObserver((entries) => {
       const idx = siblings.indexOf(entry.target);
       setTimeout(() => {
         entry.target.classList.add('visible');
-      }, idx * 80);
+      }, idx * 150);
       revealObserver.unobserve(entry.target);
     }
   });
