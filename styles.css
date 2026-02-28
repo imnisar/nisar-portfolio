@@ -2287,4 +2287,20 @@ svg {
     font-size: 10px !important;
     margin-top: 6px !important;
   }
+
+  .hero-actions {
+    gap: 10px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .btn {
+    padding: 10px 18px !important;
+    /* Smaller buttons */
+    font-size: 13px !important;
+  }
+
+  .btn svg {
+    width: 15px !important;
+    height: 15px !important;
+  }
 }
