@@ -2249,6 +2249,21 @@ svg {
     border-radius: 50px !important;
     z-index: 1000 !important;
     gap: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .light-theme .hero-socials {
+    background: rgba(255, 255, 255, 0.6) !important;
+    border-color: rgba(99, 102, 241, 0.2) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .light-theme .social-icon-link {
+    color: var(--muted) !important;
+  }
+
+  .light-theme .social-icon-link:hover {
+    color: var(--blue) !important;
   }
 
   .hero-scroll-indicator {
@@ -2266,6 +2281,25 @@ svg {
     padding: 12px 6px !important;
     border-radius: 50px !important;
     z-index: 1000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .light-theme .hero-scroll-indicator {
+    background: rgba(255, 255, 255, 0.6) !important;
+    border-color: rgba(99, 102, 241, 0.2) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .light-theme .hero-scroll-indicator span {
+    color: var(--muted) !important;
+  }
+
+  .light-theme .scroll-mouse {
+    border-color: var(--blue) !important;
+  }
+
+  .light-theme .scroll-wheel {
+    background: var(--blue) !important;
   }
 
   .social-icon-link {
