@@ -2209,18 +2209,18 @@ svg {
   }
 
   .hero-arch-wrap {
-    width: 140px !important;
+    width: 160px !important;
     margin: 0 auto !important;
   }
 
   .hero-arch {
-    width: 140px !important;
-    height: 190px !important;
-    border-radius: 70px 70px 0 0 !important;
+    width: 160px !important;
+    height: 215px !important;
+    border-radius: 80px 80px 0 0 !important;
   }
 
   .hero-arch-glow {
-    width: 160px !important;
+    width: 180px !important;
   }
 
   .hero-socials {
