@@ -2238,9 +2238,9 @@ svg {
     position: absolute !important;
     left: -65px !important;
     /* Adjusted for larger image */
-    top: 80% !important;
-    /* Moved even lower towards bottom of arch */
-    transform: translateY(-50%) !important;
+    top: 0% !important;
+    /* Aligned with top of the arch */
+    transform: none !important;
     background: rgba(15, 23, 42, 0.4) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
