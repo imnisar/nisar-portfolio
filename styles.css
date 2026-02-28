@@ -2233,12 +2233,11 @@ svg {
     background: rgba(15, 23, 42, 0.4) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    padding: 14px 4px !important;
-    /* Increased padding */
+    padding: 12px 6px !important;
+    /* Standardized padding */
     border-radius: 50px !important;
     z-index: 1000 !important;
     gap: 16px !important;
-    /* Increased space between larger icons */
   }
 
   .hero-scroll-indicator {
@@ -2252,44 +2251,40 @@ svg {
     background: rgba(15, 23, 42, 0.4) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    padding: 14px 4px !important;
+    padding: 12px 6px !important;
+    /* Standardized padding */
     border-radius: 50px !important;
     z-index: 1000 !important;
   }
 
   .social-icon-link {
-    width: 32px !important;
-    /* Significantly larger size */
-    height: 32px !important;
-    /* Significantly larger size */
+    width: 28px !important;
+    /* Slightly reduced for balance */
+    height: 28px !important;
   }
 
   .social-icon-link svg {
-    width: 18px !important;
-    /* Larger icon inside */
-    height: 18px !important;
+    width: 16px !important;
+    height: 16px !important;
   }
 
   .scroll-mouse {
-    width: 22px !important;
-    /* Increased from 16px */
-    height: 36px !important;
-    /* Increased from 26px */
+    width: 24px !important;
+    /* Enlarged to match social icon width */
+    height: 40px !important;
+    /* Enlarged frame */
     border-width: 2px !important;
-    /* Slightly thicker border */
-    padding-top: 6px !important;
+    padding-top: 8px !important;
   }
 
   .scroll-wheel {
     width: 4px !important;
-    /* Increased from 3px */
-    height: 8px !important;
-    /* Increased from 6px */
+    height: 10px !important;
+    /* Longer wheel for better visibility */
   }
 
   .hero-scroll-indicator span {
     font-size: 10px !important;
-    /* Increased from 8px */
     margin-top: 6px !important;
   }
 }
