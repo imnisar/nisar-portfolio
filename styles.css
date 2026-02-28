@@ -509,11 +509,32 @@ svg {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
   gap: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-center {
+    padding-top: 120px;
+  }
+
+  .hero-name {
+    font-size: 38px !important;
+    margin-bottom: 20px;
+  }
+
+  .hero-arch {
+    width: 240px;
+    height: 320px;
+    border-radius: 120px 120px 0 0;
+  }
+
+  .hero-arch-glow {
+    width: 260px;
+  }
 }
 
 .hero-hello {
@@ -554,9 +575,9 @@ svg {
 }
 
 .hero-arch {
-  width: 280px;
-  height: 360px;
-  border-radius: 140px 140px 0 0;
+  width: 320px;
+  height: 420px;
+  border-radius: 160px 160px 0 0;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(99, 102, 241, 0.35) 0%, rgba(14, 165, 233, 0.2) 100%);
   position: relative;
@@ -578,7 +599,7 @@ svg {
   bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
+  width: 340px;
   height: 80px;
   background: radial-gradient(ellipse, rgba(99, 102, 241, 0.4) 0%, transparent 70%);
   filter: blur(20px);
