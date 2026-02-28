@@ -115,10 +115,16 @@ contactForm.addEventListener('submit', async (e) => {
       formSuccess.classList.add('visible');
       setTimeout(() => formSuccess.classList.remove('visible'), 5000);
     } else {
-      alert("Oops! There was a problem submitting your form");
+      const data = await response.json();
+      if (data.errors) {
+        alert(data.errors.map(error => error.message).join(", "));
+      } else {
+        alert("Oops! There was a problem submitting your form. Please ensure your Formspree ID is correct.");
+      }
     }
   } catch (error) {
-    alert("Oops! There was a problem submitting your form");
+    console.error("Form submission error:", error);
+    alert("Oops! Connection error. Please check your internet or Formspree setup.");
   } finally {
     submitBtn.disabled = false;
     submitBtn.innerHTML = originalBtnText;
