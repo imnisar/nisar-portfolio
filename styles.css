@@ -2192,35 +2192,25 @@ svg {
   }
 }
 
-@media (max-width: 768px) {
-  .section {
-    padding: 72px 0;
-  }
-
-  .top-bar {
-    height: 60px;
-    padding: 0 16px;
-  }
-
-  .brand-name {
-    font-size: 18px;
-  }
-
-  .nav-link {
-    padding: 8px 14px;
-    font-size: 13px;
-  }
-}
-
 /* ── Extreme Mobile Hero Refinements (Matches Muneer Hasan UI) ── */
 @media (max-width: 768px) {
   .hero-center {
-    padding-top: 100px !important;
+    padding-top: 80px !important;
   }
 
   .hero-name {
-    font-size: 28px !important;
-    margin-bottom: 12px !important;
+    font-size: 26px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .hero-hello {
+    font-size: 16px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .hero-arch-wrap {
+    width: 140px !important;
+    margin: 0 auto !important;
   }
 
   .hero-arch {
@@ -2235,7 +2225,8 @@ svg {
 
   .hero-socials {
     position: absolute !important;
-    left: 12px !important;
+    left: -45px !important;
+    /* Positioned relative to the 140px image container */
     top: 50% !important;
     transform: translateY(-50%) !important;
     background: rgba(15, 23, 42, 0.4) !important;
@@ -2244,12 +2235,14 @@ svg {
     padding: 10px 2px !important;
     border-radius: 50px !important;
     z-index: 1000 !important;
+    gap: 12px !important;
   }
 
   .hero-scroll-indicator {
     display: flex !important;
     position: absolute !important;
-    right: 12px !important;
+    right: -45px !important;
+    /* Positioned relative to the 140px image container */
     top: 50% !important;
     transform: translateY(-50%) !important;
     background: rgba(15, 23, 42, 0.4) !important;
@@ -2261,8 +2254,8 @@ svg {
   }
 
   .social-icon-link {
-    width: 24px !important;
-    height: 24px !important;
+    width: 22px !important;
+    height: 22px !important;
   }
 
   .social-icon-link svg {
@@ -2271,11 +2264,19 @@ svg {
   }
 
   .scroll-mouse {
-    width: 18px !important;
-    height: 28px !important;
+    width: 16px !important;
+    height: 26px !important;
+    border-width: 1px !important;
+    padding-top: 4px !important;
+  }
+
+  .scroll-wheel {
+    width: 3px !important;
+    height: 6px !important;
   }
 
   .hero-scroll-indicator span {
-    font-size: 9px !important;
+    font-size: 8px !important;
+    margin-top: 4px !important;
   }
 }
