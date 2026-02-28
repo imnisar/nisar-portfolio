@@ -2211,6 +2211,7 @@ svg {
     font-size: 13px;
   }
 }
+
 /* ── Extreme Mobile Hero Refinements (Matches Muneer Hasan UI) ── */
 @media (max-width: 768px) {
   .hero-center {
@@ -2233,8 +2234,8 @@ svg {
   }
 
   .hero-socials {
-    position: fixed !important;
-    left: 4px !important;
+    position: absolute !important;
+    left: 12px !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
     background: rgba(15, 23, 42, 0.4) !important;
@@ -2247,8 +2248,8 @@ svg {
 
   .hero-scroll-indicator {
     display: flex !important;
-    position: fixed !important;
-    right: 4px !important;
+    position: absolute !important;
+    right: 12px !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
     background: rgba(15, 23, 42, 0.4) !important;
