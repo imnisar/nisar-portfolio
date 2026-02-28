@@ -2244,15 +2244,14 @@ svg {
     display: flex !important;
     position: absolute !important;
     right: -58px !important;
-    /* Slightly more distance */
-    top: 80% !important;
-    /* Moved even lower towards bottom of arch */
-    transform: translateY(-50%) !important;
+    top: 0% !important;
+    /* Aligned with top of the arch */
+    transform: none !important;
+    /* Removed centering since we start from top */
     background: rgba(15, 23, 42, 0.4) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
     padding: 12px 6px !important;
-    /* Standardized padding */
     border-radius: 50px !important;
     z-index: 1000 !important;
   }
