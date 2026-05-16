@@ -41,13 +41,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
+    <nav className="fixed bottom-6 sm:top-6 sm:bottom-auto left-1/2 -translate-x-1/2 z-50 w-[max-content] max-w-[95vw]">
       <motion.div
-        initial={{ y: -100, opacity: 0 }}
+        initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         className={cn(
-          "flex items-center gap-1 p-2 rounded-full border border-white/10 transition-all duration-300",
-          scrolled ? "bg-navy/80 backdrop-blur-xl shadow-2xl" : "bg-white/5 backdrop-blur-md"
+          "flex items-center gap-1 p-1 sm:p-2 rounded-full border border-white/10 transition-all duration-300",
+          scrolled ? "bg-navy/80 backdrop-blur-xl shadow-2xl" : "bg-navy/40 backdrop-blur-md"
         )}
       >
         {navItems.map((item) => (
@@ -56,18 +56,18 @@ export default function Navbar() {
             href={item.href}
             onClick={() => setActive(item.name)}
             className={cn(
-              "relative px-4 py-2 rounded-full text-sm font-medium transition-all group flex items-center gap-2",
+              "relative px-3 sm:px-4 py-2 rounded-full text-[11px] sm:text-sm font-medium transition-all group flex items-center gap-1.5 sm:gap-2",
               active === item.name ? "text-white" : "text-muted hover:text-white"
             )}
           >
             {active === item.name && (
               <motion.span
                 layoutId="nav-pill"
-                className="absolute inset-0 bg-gradient-to-r from-blue/20 to-indigo/20 border border-white/10 rounded-full"
+                className="absolute inset-0 bg-gradient-to-r from-blue/30 to-indigo/30 border border-white/10 rounded-full"
                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
               />
             )}
-            <item.icon size={16} className={cn("hidden sm:block", active === item.name ? "text-blue" : "text-muted2 group-hover:text-blue transition-colors")} />
+            <item.icon size={14} className={cn("hidden min-[400px]:block", active === item.name ? "text-blue" : "text-muted2 group-hover:text-blue transition-colors")} />
             <span className="relative z-10">{item.name}</span>
           </a>
         ))}

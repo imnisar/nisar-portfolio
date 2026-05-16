@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     title: "Muhammad Nisar | Flutter Mobile App Developer",
     description: "Expert Flutter Developer building production-grade mobile applications.",
   },
+  icons: {
+    icon: "/assets/logo.png",
+    apple: "/assets/logo.png",
+  },
 };
 
 export default function RootLayout({
