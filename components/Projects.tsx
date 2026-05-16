@@ -7,6 +7,34 @@ import { ExternalLink, Github, PlayCircle } from "lucide-react";
 
 const projects = [
   {
+    title: "Chill Party",
+    category: "Social Audio / Community",
+    image: "/assets/chillParty.png",
+    description: "Flutter-based social audio app with live voice rooms, animated gifts, and a virtual store system. Features seamless real-time interaction using Agora and Socket.io.",
+    stack: ["Flutter", "Agora RTC", "Socket.io", "Firebase", "GetX"],
+  },
+  {
+    title: "Shortzz / KitKet",
+    category: "Short Video & Live Streaming",
+    image: "/assets/Shortzz-app-logo.png",
+    description: "Flutter social media app for reels, live streaming, real-time chat, and creator monetization. Includes AR filters, subscriptions, and a virtual gift system.",
+    stack: ["Flutter", "Zego Engine", "Firebase", "DeepAR", "RevenueCat"],
+  },
+  {
+    title: "Christ Match",
+    category: "Faith-based Social / Dating",
+    image: "/assets/faithMatch.png",
+    description: "Flutter-based Christian dating app focused on faith-driven relationships and church connections. Includes advanced faith filters, real-time chat, and face verification.",
+    stack: ["Flutter", "Firebase", "AWS Rekognition", "GetX", "RevenueCat"],
+  },
+  {
+    title: "Eventyzze",
+    category: "Events / Live Streaming",
+    image: "/assets/Eventyzze.png",
+    description: "Flutter-based event discovery and live streaming platform where users can browse trending shows, create events with media ads, and join live streams powered by Agora.",
+    stack: ["Flutter", "Agora RTC", "Firebase", "GetX", "Dio"],
+  },
+  {
     title: "Pitch Live",
     category: "Social Commerce / Streaming",
     image: "/assets/pitchLive.png",
