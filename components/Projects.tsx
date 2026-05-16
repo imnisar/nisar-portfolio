@@ -98,13 +98,18 @@ export default function Projects() {
               className="glass-card rounded-2xl overflow-hidden group border-white/5 hover:border-blue/30 transition-all flex flex-col"
             >
               {/* Image Container */}
-              <div className="relative aspect-video overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+              <div className="relative aspect-video overflow-hidden bg-white/5 flex items-center justify-center p-4">
+                <div className="relative w-full h-full">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority={index < 3}
+                    unoptimized={project.image.endsWith('.svg')}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                   {project.link ? (
                     <a
