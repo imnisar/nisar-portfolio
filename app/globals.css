@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0f172a;
+  --color-navy-mid: #131f35;
+  --color-navy-card: #1a2744;
+  --color-navy-card2: #162038;
+  --color-blue: #0ea5e9;
+  --color-indigo: #6366f1;
+  --color-violet: #8b5cf6;
+  --color-text: #e2e8f0;
+  --color-muted: #94a3b8;
+  --color-muted2: #64748b;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --radius-xl: 16px;
+  --radius-lg: 12px;
+  --radius-md: 8px;
+}
+
+:root {
+  --background: #0f172a;
+  --foreground: #e2e8f0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue via-indigo to-violet;
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-navbar {
+    @apply bg-navy/80 backdrop-blur-md border-b border-white/5;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-full font-semibold bg-gradient-to-r from-blue to-indigo text-white shadow-lg shadow-blue/25 hover:shadow-blue/40 hover:-translate-y-0.5 transition-all active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-full font-semibold bg-white/5 border border-white/10 hover:bg-white/10 transition-all active:scale-95;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-navy;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+}
