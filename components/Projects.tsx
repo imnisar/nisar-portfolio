@@ -7,6 +7,13 @@ import { ExternalLink, Github, PlayCircle } from "lucide-react";
 
 const projects = [
   {
+    title: "Pitch Live",
+    category: "Social Commerce / Streaming",
+    image: "/assets/pitchLive.png",
+    description: "Flutter-based live streaming and social commerce app connecting creators and buyers through real-time video, short-video feeds, and interactive gifting.",
+    stack: ["Flutter", "Agora RTC", "Firebase", "GetX", "Socket.io"],
+  },
+  {
     title: "Zilo Live",
     category: "Mobile Application / Social",
     image: "/assets/ic_app_logo.webp",
