@@ -82,12 +82,23 @@ export default function Contact() {
             className="glass-card p-8 lg:p-10 rounded-3xl"
           >
             <h3 className="text-2xl font-bold mb-8">Send a Message</h3>
-            <form className="space-y-6">
+            <form 
+              action="https://formsubmit.co/inisar.mail@gmail.com" 
+              method="POST"
+              className="space-y-6"
+            >
+              {/* Hidden settings for FormSubmit */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://muhammadnisarportfolio.vercel.app/" />
+
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-muted ml-1">Name</label>
                   <input 
                     type="text" 
+                    name="name"
+                    required
                     placeholder="John Smith"
                     className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-blue/50 transition-colors text-white"
                   />
@@ -96,6 +107,8 @@ export default function Contact() {
                   <label className="text-sm font-medium text-muted ml-1">Email</label>
                   <input 
                     type="email" 
+                    name="email"
+                    required
                     placeholder="john@example.com"
                     className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-blue/50 transition-colors text-white"
                   />
@@ -106,6 +119,8 @@ export default function Contact() {
                 <label className="text-sm font-medium text-muted ml-1">Subject</label>
                 <input 
                   type="text" 
+                  name="subject"
+                  required
                   placeholder="Project Inquiry"
                   className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-blue/50 transition-colors text-white"
                 />
@@ -115,12 +130,14 @@ export default function Contact() {
                 <label className="text-sm font-medium text-muted ml-1">Message</label>
                 <textarea 
                   rows={4}
+                  name="message"
+                  required
                   placeholder="Tell me about your project..."
                   className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-blue/50 transition-colors text-white resize-none"
                 />
               </div>
 
-              <button className="btn-primary w-full flex items-center justify-center gap-2 group">
+              <button type="submit" className="btn-primary w-full flex items-center justify-center gap-2 group">
                 Send Message
                 <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>

@@ -7,6 +7,13 @@ import { ExternalLink, Github, PlayCircle } from "lucide-react";
 
 const projects = [
   {
+    title: "Zilo Live",
+    category: "Mobile Application / Social",
+    image: "/assets/ic_app_logo.webp",
+    description: "Real-time social live streaming and audio room platform with PK battles, private chat, virtual gifts, and wallet management. Built for high-scale interaction with a complete creator economy.",
+    stack: ["Flutter", "Node.js", "Agora RTC", "Socket.io", "MongoDB"],
+  },
+  {
     title: "Legal Ace",
     category: "Mobile Application",
     image: "/assets/legalAce.png",
